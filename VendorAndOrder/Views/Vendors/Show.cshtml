@@ -6,9 +6,9 @@
 @foreach (Order order in @Model["orders"])
 {
   <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
+  <!-- <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
   <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Price</a></li>
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Date</a></li>
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Date</a></li> -->
 }
 </ol>
 
