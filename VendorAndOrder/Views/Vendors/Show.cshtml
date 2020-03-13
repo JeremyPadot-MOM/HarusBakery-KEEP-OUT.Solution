@@ -1,0 +1,17 @@
+@using VendorAndOrder.Models;
+
+<h3>Here are all the Orders and information per Vendor:</h3>
+
+<ol>
+@foreach (Order order in @Model["orders"])
+{
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Price</a></li>
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Date</a></li>
+}
+</ol>
+
+<p><a href='/categories/@Model["category"].Id/orders/new'>Add a new orders</a></p>
+<p><a href='/categories'>Return to vendor list</a></p>
+<p><a href='/'>Return to Main Page</a></p>
