@@ -5,7 +5,7 @@ using VendorAndOrder.Models;
 
 namespace VendorAndOrder.Controllers
 {
-  public class CategoriesController : Controller
+  public class VendorsController : Controller
   {
     
   }
