@@ -1,6 +1,6 @@
 @using VendorAndOrder.Models;
 
-<h3>Here are all the Orders and information per Vendor:</h3>
+<h3>Here are your orders:</h3>
 
 <ol>
 @foreach (Order order in @Model["orders"])
@@ -12,6 +12,6 @@
 }
 </ol>
 
-<p><a href='/categories/@Model["category"].Id/orders/new'>Add a new orders</a></p>
-<p><a href='/categories'>Return to vendor list</a></p>
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new orders</a></p>
+<p><a href='/vendors'>Return to vendor list</a></p>
 <p><a href='/'>Return to Main Page</a></p>
