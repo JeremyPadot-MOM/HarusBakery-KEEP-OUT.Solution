@@ -15,6 +15,10 @@ _An MVC application that will keep track of vendors and their orders for our fri
 
 | Behavior | Input | Output |
 |:---|:---:|:---:|
+| Application creates instance of Vendor | Vendor name/description  | Application creates new Vendor |
+| Application creates instance of Order | Order title/description/price/date  | Application creates new Order |
+| Application sorts orders inside vendors as categories and items | newVendor newOrder | Application creates object within object |
+| Application returns Vendor and Order | Vendor: Harus Bakery / Order: Tenderpaw Biscuits & Catnip sweetroll, $10, March 12, 2020  | Vendor: Harus Bakery Order: Harus Order, Tenderpaw Biscuits & Catnip sweetroll, $10, March 12, 2020 |
 
 
 ## Setup/Installation Requirements
@@ -39,7 +43,7 @@ dotnet run
 ```
 5. Open in your browser by clicking
 ```sh
-localhost:5000/
+http://localhost:5000
 ```
 
 
