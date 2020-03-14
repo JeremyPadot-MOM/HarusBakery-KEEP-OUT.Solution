@@ -1,9 +1,4 @@
-div#footer {
-  position:fixed;
-  bottom:0px;
-  left:0px;
-  width:100%;
-  color:#CCC;
-  background:#333;
-  padding:8px;
+h1 {
+  font-family: "Lobster", cursive;
+  text-align: center;
 }
