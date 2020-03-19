@@ -37,11 +37,23 @@ git clone https://github.com/kalepadot/VendorAndOrder.Solutions.git
 ```sh
 cd VendorAndOrder.Solutions
 ```
-4.  Start the program
+4. Enter the program file
+```sh
+cd VentorAndOrder/
+```
+5. Restore
+```sh
+dotnet restore
+```
+6. Build
+```sh
+dotnet build
+```
+7.  Start the program
 ```sh
 dotnet run
 ```
-5. Open in your browser by clicking
+8. Open in your browser by clicking
 ```sh
 http://localhost:5000
 ```

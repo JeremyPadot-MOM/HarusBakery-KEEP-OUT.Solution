@@ -3,7 +3,6 @@
 }
 @using VendorAndOrder.Models;
 
-<!-- <img class="center"src= '~/img/haru.gif'/> -->
 <img class="center"src= '~/img/orders.gif'/>
 <h1>Add Order + Select Order to View</h1>
 
@@ -11,9 +10,6 @@
 @foreach (Order order in @Model["orders"])
 {
   <h1><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></h1>
-  <!-- <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Price</a></li>
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Date</a></li> -->
 }
 
 

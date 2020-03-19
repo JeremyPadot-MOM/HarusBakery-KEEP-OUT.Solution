@@ -1,7 +1,5 @@
 body {
-  /* font-family: 'Lobster', 'cursive'; */
   text-align: center;
-  /* background-color: rgb(235, 115, 235); */
   font-family: 'Caveat', cursive;
 }
 
@@ -13,7 +11,6 @@ body {
   width: 50%; 
   height: auto;
 }
-
 
 .left {
   float: left;
@@ -73,3 +70,4 @@ label {
   width: 10%; 
   height: 5%;
 }
+
