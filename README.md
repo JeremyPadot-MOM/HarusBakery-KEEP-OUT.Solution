@@ -9,6 +9,8 @@
 
 _An MVC application that will keep track of vendors and their orders for our friend Pierre. This application will supply Pierre with Vendor categories, their description, and a list of what they typically order. _
 
+![Landing Page Preview](420.gif)
+
 
 
 ## Behavior Driven Project Specifications
