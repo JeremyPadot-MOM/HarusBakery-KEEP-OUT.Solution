@@ -39,7 +39,7 @@ cd VendorAndOrder.Solutions
 ```
 4. Enter the program file
 ```sh
-cd VentorAndOrder/
+cd VendorAndOrder/
 ```
 5. Restore
 ```sh
