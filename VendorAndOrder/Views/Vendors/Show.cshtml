@@ -1,20 +1,24 @@
-@using VendorAndOrder.Models;
 @{
   Layout = "_Layout";
 }
-<h3>Here are your orders:</h3>
-<h3>Select to view order details</h3>
+@using VendorAndOrder.Models;
 
-<ol>
+<!-- <img class="center"src= '~/img/haru.gif'/> -->
+<img class="center"src= '~/img/orders.gif'/>
+<h1>Add Order + Select Order to View</h1>
+
+
 @foreach (Order order in @Model["orders"])
 {
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+  <h1><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></h1>
   <!-- <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
   <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Price</a></li>
   <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Date</a></li> -->
 }
-</ol>
 
-<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new orders</a></p>
-<p><a href='/vendors'>Return to vendor list</a></p>
-<p><a href='/'>Return to Main Page</a></p>
+
+
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'><img class="left"src= '~/img/addneworder.gif'/></a></p>
+<p><a href='/vendors'><img class="right"src= '~/img/viewvendors.gif'/></a></p>
+
+<p><a href='/'><img class="center"src= '~/img/return.gif'/></a></p>

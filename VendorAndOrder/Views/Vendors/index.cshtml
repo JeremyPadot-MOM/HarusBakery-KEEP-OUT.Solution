@@ -1,19 +1,23 @@
-@using VendorAndOrder.Models;
 @{
   Layout = "_Layout";
 }
 
-<h1>Vendors</h1>
-<h3>Please select a vendor to add or view an order</h3>
+@using VendorAndOrder.Models;
+
+
+<img class="center"src= '~/img/vendors.gif'/>
+<!-- <h1>Please select a vendor to add + view + delete an order</h1> -->
 
 @if (@Model.Count == 0)
 {
-  <h3>Oh dear! No vendors have been added yet!</h3>
+  <p><a href='/'><img class="center"src= '~/img/dead.gif'/></a></p>
+  <h1> YOU FORGOT TO DO SOMETHING </h1>
 } 
-
+ <h1>Please select a vendor to add + view + delete an order</h1>
 @foreach (Vendor vendor in Model)
 {
-  <h3><a href='/vendors/@vendor.Id'>@vendor.Name</a></h3>
+ 
+  <h1><a href='/vendors/@vendor.Id'>@vendor.Name</a></h1>
 }
 
-<p><a href='/'>Back to home page</a></p>
+<p><a href='/'><img class="center"src= '~/img/return.gif'/></a></p>
